@@ -13,6 +13,13 @@
 		51D51D7A2908699900ABEFBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51D51D782908699900ABEFBD /* Main.storyboard */; };
 		51D51D7C2908699B00ABEFBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51D51D7B2908699B00ABEFBD /* Assets.xcassets */; };
 		51D51D7F2908699B00ABEFBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51D51D7D2908699B00ABEFBD /* LaunchScreen.storyboard */; };
+		51D51D8829086A4000ABEFBD /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 51D51D8729086A4000ABEFBD /* RxCocoa */; };
+		51D51D8A29086A4000ABEFBD /* RxCocoa-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 51D51D8929086A4000ABEFBD /* RxCocoa-Dynamic */; };
+		51D51D8C29086A4000ABEFBD /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 51D51D8B29086A4000ABEFBD /* RxRelay */; };
+		51D51D8E29086A4000ABEFBD /* RxRelay-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 51D51D8D29086A4000ABEFBD /* RxRelay-Dynamic */; };
+		51D51D9029086A4000ABEFBD /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 51D51D8F29086A4000ABEFBD /* RxSwift */; };
+		51D51D9229086A4000ABEFBD /* RxSwift-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 51D51D9129086A4000ABEFBD /* RxSwift-Dynamic */; };
+		51D51D9429086B2400ABEFBD /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D51D9329086B2400ABEFBD /* PhotosCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,7 @@
 		51D51D7B2908699B00ABEFBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51D51D7E2908699B00ABEFBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51D51D802908699B00ABEFBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51D51D9329086B2400ABEFBD /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51D51D8E29086A4000ABEFBD /* RxRelay-Dynamic in Frameworks */,
+				51D51D8C29086A4000ABEFBD /* RxRelay in Frameworks */,
+				51D51D9029086A4000ABEFBD /* RxSwift in Frameworks */,
+				51D51D8A29086A4000ABEFBD /* RxCocoa-Dynamic in Frameworks */,
+				51D51D9229086A4000ABEFBD /* RxSwift-Dynamic in Frameworks */,
+				51D51D8829086A4000ABEFBD /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +77,7 @@
 				51D51D7B2908699B00ABEFBD /* Assets.xcassets */,
 				51D51D7D2908699B00ABEFBD /* LaunchScreen.storyboard */,
 				51D51D802908699B00ABEFBD /* Info.plist */,
+				51D51D9329086B2400ABEFBD /* PhotosCollectionViewController.swift */,
 			);
 			path = CameraFilterRx;
 			sourceTree = "<group>";
@@ -83,6 +98,14 @@
 			dependencies = (
 			);
 			name = CameraFilterRx;
+			packageProductDependencies = (
+				51D51D8729086A4000ABEFBD /* RxCocoa */,
+				51D51D8929086A4000ABEFBD /* RxCocoa-Dynamic */,
+				51D51D8B29086A4000ABEFBD /* RxRelay */,
+				51D51D8D29086A4000ABEFBD /* RxRelay-Dynamic */,
+				51D51D8F29086A4000ABEFBD /* RxSwift */,
+				51D51D9129086A4000ABEFBD /* RxSwift-Dynamic */,
+			);
 			productName = CameraFilterRx;
 			productReference = 51D51D6F2908699900ABEFBD /* CameraFilterRx.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +134,9 @@
 				Base,
 			);
 			mainGroup = 51D51D662908699900ABEFBD;
+			packageReferences = (
+				51D51D8629086A4000ABEFBD /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 51D51D702908699900ABEFBD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,6 +167,7 @@
 				51D51D772908699900ABEFBD /* ViewController.swift in Sources */,
 				51D51D732908699900ABEFBD /* AppDelegate.swift in Sources */,
 				51D51D752908699900ABEFBD /* SceneDelegate.swift in Sources */,
+				51D51D9429086B2400ABEFBD /* PhotosCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +385,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		51D51D8629086A4000ABEFBD /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 6.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		51D51D8729086A4000ABEFBD /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 51D51D8629086A4000ABEFBD /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		51D51D8929086A4000ABEFBD /* RxCocoa-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 51D51D8629086A4000ABEFBD /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxCocoa-Dynamic";
+		};
+		51D51D8B29086A4000ABEFBD /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 51D51D8629086A4000ABEFBD /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		51D51D8D29086A4000ABEFBD /* RxRelay-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 51D51D8629086A4000ABEFBD /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxRelay-Dynamic";
+		};
+		51D51D8F29086A4000ABEFBD /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 51D51D8629086A4000ABEFBD /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		51D51D9129086A4000ABEFBD /* RxSwift-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 51D51D8629086A4000ABEFBD /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxSwift-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 51D51D672908699900ABEFBD /* Project object */;
 }
