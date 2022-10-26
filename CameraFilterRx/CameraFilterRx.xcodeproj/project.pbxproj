@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		517F462C2909138100BD9DF1 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F462B2909138100BD9DF1 /* PhotoCollectionViewCell.swift */; };
 		51D51D732908699900ABEFBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D51D722908699900ABEFBD /* AppDelegate.swift */; };
 		51D51D752908699900ABEFBD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D51D742908699900ABEFBD /* SceneDelegate.swift */; };
 		51D51D772908699900ABEFBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D51D762908699900ABEFBD /* ViewController.swift */; };
@@ -14,15 +15,13 @@
 		51D51D7C2908699B00ABEFBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51D51D7B2908699B00ABEFBD /* Assets.xcassets */; };
 		51D51D7F2908699B00ABEFBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51D51D7D2908699B00ABEFBD /* LaunchScreen.storyboard */; };
 		51D51D8829086A4000ABEFBD /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 51D51D8729086A4000ABEFBD /* RxCocoa */; };
-		51D51D8A29086A4000ABEFBD /* RxCocoa-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 51D51D8929086A4000ABEFBD /* RxCocoa-Dynamic */; };
 		51D51D8C29086A4000ABEFBD /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 51D51D8B29086A4000ABEFBD /* RxRelay */; };
-		51D51D8E29086A4000ABEFBD /* RxRelay-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 51D51D8D29086A4000ABEFBD /* RxRelay-Dynamic */; };
 		51D51D9029086A4000ABEFBD /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 51D51D8F29086A4000ABEFBD /* RxSwift */; };
-		51D51D9229086A4000ABEFBD /* RxSwift-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 51D51D9129086A4000ABEFBD /* RxSwift-Dynamic */; };
 		51D51D9429086B2400ABEFBD /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D51D9329086B2400ABEFBD /* PhotosCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		517F462B2909138100BD9DF1 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		51D51D6F2908699900ABEFBD /* CameraFilterRx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraFilterRx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51D51D722908699900ABEFBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51D51D742908699900ABEFBD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,11 +38,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51D51D8E29086A4000ABEFBD /* RxRelay-Dynamic in Frameworks */,
 				51D51D8C29086A4000ABEFBD /* RxRelay in Frameworks */,
 				51D51D9029086A4000ABEFBD /* RxSwift in Frameworks */,
-				51D51D8A29086A4000ABEFBD /* RxCocoa-Dynamic in Frameworks */,
-				51D51D9229086A4000ABEFBD /* RxSwift-Dynamic in Frameworks */,
 				51D51D8829086A4000ABEFBD /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,6 +74,7 @@
 				51D51D7D2908699B00ABEFBD /* LaunchScreen.storyboard */,
 				51D51D802908699B00ABEFBD /* Info.plist */,
 				51D51D9329086B2400ABEFBD /* PhotosCollectionViewController.swift */,
+				517F462B2909138100BD9DF1 /* PhotoCollectionViewCell.swift */,
 			);
 			path = CameraFilterRx;
 			sourceTree = "<group>";
@@ -100,11 +97,8 @@
 			name = CameraFilterRx;
 			packageProductDependencies = (
 				51D51D8729086A4000ABEFBD /* RxCocoa */,
-				51D51D8929086A4000ABEFBD /* RxCocoa-Dynamic */,
 				51D51D8B29086A4000ABEFBD /* RxRelay */,
-				51D51D8D29086A4000ABEFBD /* RxRelay-Dynamic */,
 				51D51D8F29086A4000ABEFBD /* RxSwift */,
-				51D51D9129086A4000ABEFBD /* RxSwift-Dynamic */,
 			);
 			productName = CameraFilterRx;
 			productReference = 51D51D6F2908699900ABEFBD /* CameraFilterRx.app */;
@@ -165,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51D51D772908699900ABEFBD /* ViewController.swift in Sources */,
+				517F462C2909138100BD9DF1 /* PhotoCollectionViewCell.swift in Sources */,
 				51D51D732908699900ABEFBD /* AppDelegate.swift in Sources */,
 				51D51D752908699900ABEFBD /* SceneDelegate.swift in Sources */,
 				51D51D9429086B2400ABEFBD /* PhotosCollectionViewController.swift in Sources */,
@@ -320,8 +315,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -329,6 +323,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = artdevelop.com.CameraFilterRx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -348,8 +345,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -357,6 +353,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = artdevelop.com.CameraFilterRx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -403,30 +402,15 @@
 			package = 51D51D8629086A4000ABEFBD /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxCocoa;
 		};
-		51D51D8929086A4000ABEFBD /* RxCocoa-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 51D51D8629086A4000ABEFBD /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = "RxCocoa-Dynamic";
-		};
 		51D51D8B29086A4000ABEFBD /* RxRelay */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 51D51D8629086A4000ABEFBD /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxRelay;
 		};
-		51D51D8D29086A4000ABEFBD /* RxRelay-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 51D51D8629086A4000ABEFBD /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = "RxRelay-Dynamic";
-		};
 		51D51D8F29086A4000ABEFBD /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 51D51D8629086A4000ABEFBD /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
-		};
-		51D51D9129086A4000ABEFBD /* RxSwift-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 51D51D8629086A4000ABEFBD /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = "RxSwift-Dynamic";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
